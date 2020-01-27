@@ -17,10 +17,9 @@ suite('namespace', function () {
   });
 
   test('resolve namespace by relative name', function () {
-    let foo;
-    let bar;
-    let baz;
-
+    
+    let foo,bar,baz;
+    
     foo = namespace('foo', function () {
       bar = namespace('bar', function () {
         baz = namespace('baz', function () {
